@@ -1,9 +1,9 @@
 import { IconArrowRight } from '@/components/Icons/page';
 import { MyCard } from '@/components/MyCard/page';
-import { Dialog, type DialogProps, DialogBody, DialogHeader } from '@material-tailwind/react';
+import { Dialog, DialogBody, DialogHeader } from '@material-tailwind/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 type Props = {
 	project: any;
@@ -11,7 +11,36 @@ type Props = {
 	onClose: () => void;
 };
 
+let previousScrollY = 0;
+
 const MyModal: React.FC<Props> = ({ project = {}, open = false, onClose }) => {
+	useEffect(() => {
+		if (typeof window === 'undefined') return;
+
+		if (open) {
+			previousScrollY = window.scrollY;
+			document.body.style.position = 'fixed';
+			document.body.style.top = `-${previousScrollY}px`;
+			document.body.style.width = '100%';
+			document.body.style.overflowY = 'scroll';
+		} else {
+			const scrollYToRestore = previousScrollY;
+
+			document.body.style.position = '';
+			document.body.style.top = '';
+			document.body.style.width = '';
+			document.body.style.overflowY = '';
+
+			// Ngăn scroll bị “trượt”
+			document.documentElement.style.scrollBehavior = 'auto';
+
+			requestAnimationFrame(() => {
+				window.scrollTo(0, scrollYToRestore);
+				document.documentElement.style.scrollBehavior = '';
+			});
+		}
+	}, [open]);
+
 	return (
 		<Dialog
 			{...({
