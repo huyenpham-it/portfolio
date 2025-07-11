@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 	title: 'Huyen Pham Portfolio',
 	description: "Huyen Pham's Portfolio",
 	icons: {
-		icon: '/avatar.ico',
-		shortcut: '/avatar.ico',
+		icon: '/favicon.ico',
+		shortcut: '/favicon.ico',
 	},
 };
 

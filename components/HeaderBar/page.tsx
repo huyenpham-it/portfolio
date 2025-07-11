@@ -26,13 +26,13 @@ export const HeaderBar = () => {
 	}, []);
 
 	return (
-		<div className={`fixed ${isVisible ? 'top-0' : 'top-[-80px]'} left-0 right-0 duration-200 ease-in-out z-10`}>
-			<div className="w-full h-[80px] flex justify-between items-center justify-between bg-background shadow-(--box-shadow-header) px-5 sm:px-10 lg:px-20">
+		<div className={`fixed ${isVisible ? 'top-0' : 'top-[-64px]'} left-0 right-0 duration-200 ease-in-out z-10`}>
+			<div className="w-full h-[64px] flex justify-between items-center justify-between bg-background shadow-(--box-shadow-header) px-5 sm:px-10 lg:px-20">
 				<Link
 					href="/"
-					className="global-font-color w-[48px] h-[48px] flex items-center justify-center rounded-full ring-2"
+					className="global-font-color w-[44px] h-[44px] flex items-center justify-center rounded-full ring-2"
 				>
-					<Image className="rounded-full shadow-lg" src="/avatar.jpg" width={50} height={50} alt="" />
+					<Image className="rounded-full shadow-lg" src="/avatar.jpg" width={44} height={44} alt="" />
 				</Link>
 				<div className="w-fit h-full hidden sm:flex justify-center items-center">
 					{componentPage.map((item: any, index: number) => (
@@ -45,7 +45,7 @@ export const HeaderBar = () => {
 						</Link>
 					))}
 				</div>
-				<div className="w-fit h-fit sm:hidden">
+				<div className="w-[50px] h-[50px] sm:hidden">
 					<MyMenu />
 				</div>
 			</div>

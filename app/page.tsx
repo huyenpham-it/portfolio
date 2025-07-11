@@ -61,8 +61,8 @@ export default function Home() {
 					<div className="my-info absolute bottom-0 left-0 w-[250px] sm:w-[380px] h-[100px] sm:h-[150px]">
 						<div className="relative w-full h-full">
 							<div className="absolute left-0 top-0 right-0 bottom-0 w-full h-full bg-background flex justify-start items-center rounded-tr-[40px]">
-								<h2 className="my-info__title bg-gradient-to-r from-(--red-color) to-(--yellow-color) bg-clip-text text-xl sm:text-3xl font-extrabold text-transparent p-3">
-									Hi, I'm Huyen Pham
+								<h2 className="my-info__title bg-gradient-to-r from-(--red-color) to-(--yellow-color) bg-clip-text text-lg sm:text-2xl font-extrabold text-transparent p-3">
+									Hi, Call me Huyen Pham
 									<br />
 									Front-end Developer
 								</h2>
