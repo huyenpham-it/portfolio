@@ -9,17 +9,20 @@ export const Resume = () => {
 	const [hovered, setHovered] = useState<number | null>(null);
 
 	return (
-		<div id="resume" className="global-font-color section-separator flex flex-col items-center p-10 lg:p-20">
+		<div
+			id="resume"
+			className="global-font-color section-separator flex flex-col items-center p-5 sm:p-10 lg:p-20 scroll-mt-20 lg:scroll-mt-10"
+		>
 			<div className="bg-gradient-to-r from-(--red-color) to-(--yellow-color) bg-clip-text text-transparent uppercase mb-4">
 				2.5+ Years of Experience
 			</div>
-			<h2 className="text-5xl font-bold pink-color text-shadow-(--text-shadow)/30 mb-4">My Resume</h2>
-			<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 pt-15">
+			<h2 className="text-3xl sm:text-5xl font-bold pink-color text-shadow-(--text-shadow)/30">My Resume</h2>
+			<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 pt-10 sm:pt-15">
 				<div>
-					<h1 className="pink-color text-2xl font-semibold mb-10">Education / Experience</h1>
+					<h1 className="pink-color text-xl sm:text-2xl font-semibold mb-10">Education / Experience</h1>
 					<ol className="relative border-s-2 border-(--hr-color)">
 						{experiences.map((experience: any, index: number) => (
-							<li key={index} className="mb-10 ms-6">
+							<li key={index} className="ms-6 mb-10 last:mb-0">
 								<span
 									className={`${hovered === index ? 'red-color' : ''} absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-2 duration-300 ease-in-out`}
 								>
@@ -60,8 +63,8 @@ export const Resume = () => {
 					</ol>
 				</div>
 				<div>
-					<h1 className="pink-color text-2xl font-semibold mb-10">Skill</h1>
-					<div className="flex flex-wrap gap-5">
+					<h1 className="pink-color text-xl sm:text-2xl font-semibold mb-10">Skill</h1>
+					<div className="flex flex-wrap gap-5 cursor-default">
 						{skills.map((skill, index) => (
 							<div key={index} className="hover:-translate-y-1 duration-300 ease-in-out">
 								<MyCard>

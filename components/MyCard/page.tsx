@@ -3,6 +3,7 @@ import styles from './page.module.scss';
 
 type MyCardProps = React.HTMLAttributes<HTMLDivElement> & {
 	children: React.ReactNode;
+	className?: string;
 };
 
 export const MyCard = ({ children, className, ...rest }: MyCardProps) => {
