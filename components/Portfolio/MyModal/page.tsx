@@ -1,6 +1,6 @@
 import { IconArrowRight } from '@/components/Icons/page';
 import { MyCard } from '@/components/MyCard/page';
-import { Dialog, DialogBody, DialogHeader } from '@material-tailwind/react';
+import { Dialog, type DialogProps, DialogBody, DialogHeader } from '@material-tailwind/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -14,12 +14,18 @@ type Props = {
 const MyModal: React.FC<Props> = ({ project = {}, open = false, onClose }) => {
 	return (
 		<Dialog
-			size="xl"
-			open={open}
-			handler={onClose}
-			className="global-font-color w-[95%] max-h-[90vh] overflow-y-auto bg-color p-0 rounded-lg"
+			{...({
+				size: 'xl',
+				open,
+				handler: onClose,
+				className: 'global-font-color w-[95%] max-h-[90vh] overflow-y-auto bg-color p-0 rounded-lg'
+			} as any)}
 		>
-			<DialogHeader className="flex items-center shrink-0 antialiased justify-between p-5 lg:p-10">
+			<DialogHeader
+				{...({
+					className: 'flex items-center shrink-0 antialiased justify-between p-5 lg:p-10'
+				} as any)}
+			>
 				<div className="bg-gradient-to-r from-(--red-color) to-(--yellow-color) bg-clip-text text-transparent text-base">
 					@dieuhuyenpham
 				</div>
@@ -38,7 +44,11 @@ const MyModal: React.FC<Props> = ({ project = {}, open = false, onClose }) => {
 					</svg>
 				</button>
 			</DialogHeader>
-			<DialogBody className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-12 p-10 lg:p-20 !pt-0">
+			<DialogBody
+				{...({
+					className: 'grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-12 p-10 lg:p-20 !pt-0'
+				} as any)}
+			>
 				<Image src={project.image} width={1000} height={1000} className="lg:col-span-2 rounded-xl" alt="" />
 
 				<div className="lg:col-span-1 flex flex-col items-start gap-4 pt-5">
