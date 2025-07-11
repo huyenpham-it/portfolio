@@ -15,7 +15,11 @@ export const Intro = () => {
 					{/* ==================== ZigZag Border Animation ==================== */}
 					<div className={styles.zigzagContainer}>
 						{['C', 'O', 'D', 'E', 'R'].map((item, index) => (
-							<div key={index} className={styles.zigzagItem} style={{ '--i': index }}>
+							<div
+								key={index}
+								className={styles.zigzagItem}
+								style={{ '--i': index } as React.CSSProperties}
+							>
 								<span>
 									<b>{item}</b>
 								</span>
@@ -24,7 +28,11 @@ export const Intro = () => {
 					</div>
 					<div className={styles.zigzagContainer}>
 						{['C', 'O', 'D', 'E', 'R'].map((item, index) => (
-							<div key={index} className={styles.zigzagItem} style={{ '--i': index }}></div>
+							<div
+								key={index}
+								className={styles.zigzagItem}
+								style={{ '--i': index } as React.CSSProperties}
+							></div>
 						))}
 					</div>
 				</section>
