@@ -13,6 +13,7 @@ html {
   --yellow-color: #fec63c;
   --hr-color: #1f1d1d;
   --text-shadow: 2px 2px 0px #ff014f;
+  --box-shadow-header: 10px 10px 19px #1c1e22;
 }
 
 @theme inline {

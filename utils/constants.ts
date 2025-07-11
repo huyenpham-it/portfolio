@@ -1,3 +1,26 @@
+export const componentPage = [
+	{
+		title: 'Intro',
+		path: '#intro'
+	},
+	{
+		title: 'Features',
+		path: '#features'
+	},
+	{
+		title: 'Portfolio',
+		path: '#projects'
+	},
+	{
+		title: 'Resume',
+		path: '#resume'
+	},
+	{
+		title: 'Contact',
+		path: '#contact'
+	}
+];
+
 export const websiteProjects = [
 	{
 		type: 'website',
@@ -83,7 +106,7 @@ export const experiences = [
 		place: 'TKG VIETNAM - Ascension 6',
 		content: `_Writing clean, efficient, and maintainable code.
                 _Apply the new UI using HTML, CSS (SCSS), and JavaScript (jQuery / ReactJS).
-                _Making sure web pages look good on all devices using CSS frameworks(Bootstrap, Tailwind CSS) and media queries.
+                _Making sure web pages look good on all devices using CSS frameworks (Bootstrap, Tailwind CSS) and media queries.
                 _Enhancing page speed and performance by using lazy loading, optimizing images, and reducing unnecessary scripts.
                 _Ensuring the website functions correctly across different browsers like Chrome, Safari, ...
                 _Implementing designs provided by designers while ensuring the best user experience.

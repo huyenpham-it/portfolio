@@ -1,3 +1,4 @@
+export * from './Menu';
 export * from './Canva';
 export * from './Layout';
 export * from './PseudoCorner';

@@ -13,7 +13,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
 	title: 'Huyen Pham Portfolio',
-	description: "Huyen Pham's Portfolio"
+	description: "Huyen Pham's Portfolio",
+	icons: {
+		icon: '/avatar.ico',
+		shortcut: '/avatar.ico',
+	},
 };
 
 export default function RootLayout({
