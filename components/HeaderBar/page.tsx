@@ -32,7 +32,7 @@ export const HeaderBar = () => {
 					href="/"
 					className="global-font-color w-[44px] h-[44px] flex items-center justify-center rounded-full ring-2"
 				>
-					<Image className="rounded-full shadow-lg" src="/avatar.jpg" width={44} height={44} alt="" />
+					<Image className="rounded-full shadow-lg" src="/favicon.ico" width={44} height={44} alt="" />
 				</Link>
 				<div className="w-fit h-full hidden sm:flex justify-center items-center">
 					{componentPage.map((item: any, index: number) => (

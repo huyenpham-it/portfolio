@@ -18,16 +18,16 @@ export const Contact = () => {
 					Contact me!
 				</div>
 
-				<div className="text-center">I am available for freelance work.</div>
-				<div className="text-center">Please contact me via email or social media.</div>
+				<div className="text-center px-2">I am available for freelance work.</div>
+				<div className="text-center px-2">Please contact me via email or social media.</div>
 				<Link
 					href="mailto:dieuhuyenpham.it@gmail.com"
-					className="pink-color text-lg sm:text-2xl font-semibold mt-5 mb-10 underline decoration-dotted underline-offset-8"
+					className="pink-color sm:text-2xl font-semibold mt-5 mb-10 underline decoration-dotted underline-offset-8"
 				>
 					dieuhuyenpham.it@gmail.com
 				</Link>
 
-				<div className="flex gap-8 red-color">
+				<div className="flex gap-4 sm:gap-8 red-color">
 					<Link href="https://www.facebook.com/dieuhuyen.pham.1997">
 						<MyCard className="p-4 hover:scale-110 duration-300 ease-in-out">
 							<Facebook />
