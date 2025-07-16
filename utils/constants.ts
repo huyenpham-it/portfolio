@@ -104,16 +104,19 @@ export const experiences = [
 		time: '2022 - 2025',
 		title: 'Front-End Developer',
 		place: 'TKG VIETNAM - Ascension 6',
-		content: `_Writing clean, efficient, and maintainable code.
-                _Apply the new UI using HTML, CSS (SCSS), and JavaScript (jQuery / ReactJS).
-                _Making sure web pages look good on all devices using CSS frameworks (Bootstrap, Tailwind CSS) and media queries.
-                _Enhancing page speed and performance by using lazy loading, optimizing images, and reducing unnecessary scripts.
-                _Ensuring the website functions correctly across different browsers like Chrome, Safari, ...
-                _Implementing designs provided by designers while ensuring the best user experience.
-                _Working with APIs (RESTful APIs, GraphQL).
-                _Using Git and GitHub (experienced in using Fork tool).
-                _Experienced in working with WordPress and Shopify.
-                _Experienced in back-end development with PHP, using Symfony and Laravel (beginner).`
+		content: `_Write clean, efficient, and maintainable code following best practices.
+				_Implement modern UI using HTML, CSS (SCSS), and JavaScript (jQuery / ReactJS).
+				_Convert Figma designs and image-based layouts into responsive web pages.
+				_Ensure cross-device compatibility using CSS frameworks (Bootstrap, Tailwind CSS) and media queries.
+				_Optimize page speed and performance through lazy loading, image optimization, and reducing unused scripts.
+				_Ensure website functionality across major browsers such as Chrome, Safari, and Firefox.
+				_Collaborate with designers to implement UI/UX designs while maintaining high usability and accessibility.
+				_Experienced in working with RESTful APIs.
+				_Use Git and GitHub for version control (experienced in using Fork tool).
+				_Develop and customize websites using WordPress and Shopify platforms.
+				_Experienced in working with state management libraries like Redux (Redux Toolkit) and Context API (beginner).
+				_Experienced in working with Next.js (beginner).
+				_Experienced in back-end development with PHP, using Symfony and Laravel (beginner).`
 	},
 	{
 		time: '2024 - Now',
