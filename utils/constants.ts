@@ -105,7 +105,7 @@ export const experiences = [
 		title: 'Front-End Developer',
 		place: 'TKG VIETNAM - Ascension 6',
 		content: `_Write clean, efficient, and maintainable code following best practices.
-				_Implement modern UI using HTML, CSS (SCSS), and JavaScript (jQuery / ReactJS).
+				_Implement modern UI using HTML5, CSS3 (SCSS), and JavaScript (jQuery / ReactJS).
 				_Convert Figma designs and image-based layouts into responsive web pages.
 				_Ensure cross-device compatibility using CSS frameworks (Bootstrap, Tailwind CSS) and media queries.
 				_Optimize page speed and performance through lazy loading, image optimization, and reducing unused scripts.
@@ -133,8 +133,8 @@ export const experiences = [
 ];
 
 export const skills = [
-	'html',
-	'css',
+	'html5',
+	'css3',
 	'scss',
 	'javascript',
 	'jQuery',
