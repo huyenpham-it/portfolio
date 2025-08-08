@@ -37,11 +37,11 @@ export const Intro = () => {
 					</div>
 				</section>
 			</section>
-			<div className="w-full max-w-[530px] text-center mt-10 sm:mt-15">
-				I am a Front-End Developer with almost three years of experience building and developing websites and
-				web applications. My job is to turn dry lines of code into beautiful websites. I optimize user
-				experiences using html, css, scss, javascript, reactjs... In addition, I also use Canva for simple
-				design.
+			<div className="w-full max-w-[550px] text-center mt-10 sm:mt-15">
+				I'm a Front End Developer with almost 3 years of experience in building responsive, user-friendly web
+				applications. My job is to turn dry lines of code into beautiful websites. In addition, I also use Canva
+				for simple design. In the future, I aim to learn and develop UI/UX design skills to create more engaging
+				and intuitive user experiences.
 			</div>
 		</div>
 	);
